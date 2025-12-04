@@ -17,13 +17,10 @@ flowchart LR
     classDef rtc fill:#ffe8a3,stroke:#333,stroke-width:1px,color:black,rx:10,ry:10;
     classDef rfid fill:#ffb3b3,stroke:#333,stroke-width:1px,color:black,rx:10,ry:10;
     classDef power fill:#ffcccb,stroke:#333,stroke-width:1px,color:black,rx:10,ry:10;
+    classDef buzzer fill:#f7d59c,stroke:#333,stroke-width:1px,color:black,rx:10,ry:10;
 
+    %% INPUTS
     subgraph INPUTS
-        LED1[LED 1]:::led
-        LED2[LED 2]:::led
-        LED3[LED 3]:::led
-        LED4[LED 4]:::led
-
         BTN1[Button 1]:::btn
         BTN2[Button 2]:::btn
         BTN3[Button 3]:::btn
@@ -31,6 +28,17 @@ flowchart LR
     end
     class INPUTS group
 
+    %% OUTPUTS
+    subgraph OUTPUTS
+        LED1[LED 1]:::led
+        LED2[LED 2]:::led
+        LED3[LED 3]:::led
+        LED4[LED 4]:::led
+        BUZ[Buzzer]:::buzzer
+    end
+    class OUTPUTS group
+
+    %% PERIPHERALS
     subgraph PERIPHERALS
         LCD[LCD Display - I2C]:::lcd
         RTC[Real Time Clock]:::rtc
@@ -38,6 +46,7 @@ flowchart LR
     end
     class PERIPHERALS group
 
+    %% POWER
     subgraph POWER
         PWR[Power Supply - USB-C]:::power
     end
@@ -45,15 +54,16 @@ flowchart LR
 
     ESP[ESP32-S3]:::esp
 
-    LED1 --> ESP
-    LED2 --> ESP
-    LED3 --> ESP
-    LED4 --> ESP
-
     BTN1 --> ESP
     BTN2 --> ESP
     BTN3 --> ESP
     BTN4 --> ESP
+
+    ESP --> LED1
+    ESP --> LED2
+    ESP --> LED3
+    ESP --> LED4
+    ESP --> BUZ
 
     ESP --> LCD
     RTC --> ESP
