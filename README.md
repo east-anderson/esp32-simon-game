@@ -38,8 +38,8 @@ flowchart LR
     BTN3 --> ESP
     BTN4 --> ESP
 
-    LCD <-->|SDA/SCL| ESP
-    Power --> ESP
+    ESP --> LCD
+    ESP --> Power
 
 ---
 
