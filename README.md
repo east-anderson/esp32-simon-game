@@ -6,8 +6,6 @@ A Simon-style memory game built on the ESP32-S3 using FreeRTOS tasks, I2C commun
 
 ## System Diagram
 
-## System Diagram
-
 ```mermaid
 flowchart LR
     LED1[LED 1]
