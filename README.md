@@ -40,6 +40,7 @@ flowchart LR
 
     ESP --> LCD
     ESP --> Power
+```
 
 ---
 
