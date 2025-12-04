@@ -29,11 +29,6 @@ A Simon-style memory game built on the ESP32-S3 using FreeRTOS tasks, I2C commun
 
 ---
 
-## Project Structure
-
-
----
-
 ## How the Game Works
 
 1. The game generates a random LED sequence for each level.
