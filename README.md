@@ -4,17 +4,9 @@ A Simon-style memory game built on the ESP32-S3 using FreeRTOS tasks, I2C commun
 
 ---
 
-## Features
+## Demo Video
 
-- ESP32-S3-based game system
-- FreeRTOS tasks for LED control, input timing, and game logic
-- I2C LCD display for game messages, scores, and prompts
-- Level generation and progression with increasing difficulty
-- Button input handling with debouncing
-- Persistent high scores stored in non-volatile memory
-- Player profiles with saved score and timestamp
-- Game-over and restart functionality
-- Buzzer sounds for button presses, LED animations, and in-game jingles
+[![Demo Video](https://img.youtube.com/vi/-iWkOZgTMfk/0.jpg)](https://youtu.be/-iWkOZgTMfk)
 
 ---
 
@@ -86,12 +78,19 @@ flowchart LR
     PWR --> ESP
 ```
 
-
 ---
 
-## Demo Video
+## Features
 
-[![Demo Video](https://img.youtube.com/vi/-iWkOZgTMfk/0.jpg)](https://youtu.be/-iWkOZgTMfk)
+- ESP32-S3-based game system
+- FreeRTOS tasks for LED control, input timing, and game logic
+- I2C LCD display for game messages, scores, and prompts
+- Level generation and progression with increasing difficulty
+- Button input handling with debouncing
+- Persistent high scores stored in non-volatile memory
+- Player profiles with saved score and timestamp
+- Game-over and restart functionality
+- Buzzer sounds for button presses, LED animations, and in-game jingles
 
 ---
 
