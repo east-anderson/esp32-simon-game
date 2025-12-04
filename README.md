@@ -36,6 +36,7 @@ flowchart LR
 
     ESP --> LCD
     PWR --> ESP
+```
 
 
 ---
