@@ -6,27 +6,23 @@ A Simon-style memory game built on the ESP32-S3 using FreeRTOS tasks, I2C commun
 
 ## System Diagram
 
+## System Diagram
+
 ```mermaid
 flowchart LR
-    classDef esp fill:#f4a259,stroke:#333,stroke-width:1px,color:black,rx:12,ry:12;
-    classDef led fill:#b5e8a8,stroke:#333,stroke-width:1px,color:black,rx:12,ry:12;
-    classDef btn fill:#a8d8ff,stroke:#333,stroke-width:1px,color:black,rx:12,ry:12;
-    classDef lcd fill:#d6b3f9,stroke:#333,stroke-width:1px,color:black,rx:12,ry:12;
-    classDef power fill:#ff9a9a,stroke:#333,stroke-width:1px,color:black,rx:12,ry:12;
+    LED1[LED 1]
+    LED2[LED 2]
+    LED3[LED 3]
+    LED4[LED 4]
 
-    LED1[LED 1]:::led
-    LED2[LED 2]:::led
-    LED3[LED 3]:::led
-    LED4[LED 4]:::led
+    BTN1[Button 1]
+    BTN2[Button 2]
+    BTN3[Button 3]
+    BTN4[Button 4]
 
-    BTN1[Button 1]:::btn
-    BTN2[Button 2]:::btn
-    BTN3[Button 3]:::btn
-    BTN4[Button 4]:::btn
-
-    ESP[ESP32-S3]:::esp
-    LCD[LCD Display (I2C)]:::lcd
-    Power[Power Supply (USB-C)]:::power
+    ESP[ESP32-S3]
+    LCD[LCD Display (I2C)]
+    PWR[Power Supply (USB-C)]
 
     LED1 --> ESP
     LED2 --> ESP
@@ -39,8 +35,8 @@ flowchart LR
     BTN4 --> ESP
 
     ESP --> LCD
-    ESP --> Power
-```
+    PWR --> ESP
+
 
 ---
 
