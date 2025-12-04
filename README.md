@@ -85,6 +85,7 @@ flowchart LR
 - Persistent high scores stored in non-volatile memory
 - Player profiles with saved score and timestamp
 - Game-over and restart functionality
+- Buzzer sounds for button presses, LED animations, and in-game jingles
 
 ---
 
