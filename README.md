@@ -54,3 +54,11 @@ A Simon-style memory game built on the ESP32-S3 using FreeRTOS tasks, I2C commun
 - Breadboard or wiring harness  
 
 Pin assignments are defined inside the `.ino` file.
+
+---
+
+## License
+
+This project is licensed under an All Rights Reserved license.
+Use, copying, modification, or distribution of this code is prohibited without explicit written permission from the author.
+See the LICENSE file for full details.
