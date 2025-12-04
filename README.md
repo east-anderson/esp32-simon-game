@@ -21,8 +21,8 @@ flowchart LR
     BTN4[Button 4]
 
     ESP[ESP32-S3]
-    LCD[LCD Display (I2C)]
-    PWR[Power Supply (USB-C)]
+    LCD[LCD Display \(I2C\)]
+    PWR[Power Supply \(USB-C\)]
 
     LED1 --> ESP
     LED2 --> ESP
